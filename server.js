@@ -1,4 +1,12 @@
-import express from 'express'
+import express, {Router} from 'express'
+import bodyParser from 'body-parser'
 
-const app = new express
+const app = express()
+app.use(bodyParser.urlencoded())
+app.use(bodyParser.json())
+
+const router = Router()
+router.get('/', (req, res) => {
+    
+})
 
